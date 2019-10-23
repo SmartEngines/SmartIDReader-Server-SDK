@@ -1,0 +1,708 @@
+# Smart IDReader What's New
+
+Smart IDReader 3.2.1
+
+* Minor fixes and improvements
+
+Smart IDReader 3.2.0
+
+* Improved document detection accuracy and speed;
+* Reduction in template configuration size;
+* New algorithm for videostream rectangular card detection, delivering more stable detection;
+* Improved AZTEC barcode parsing;
+* New document types added:
+  - Antigua and Barbuda (ATG) Driving licence, ID card and passport VIZ,
+  - Bahamas (BHS) Driving licence, ID,
+  - Colombia (COL) Driving licence, ID,
+  - Cuba (CUB) Driving licence, ID,
+  - Dominica (DMA) Driving licence, ID,
+  - Algeria (DZA) Driving licence,
+  - Grenada (GRD) Driving licence,
+  - Guyana (GUY) Driving licence, ID,
+  - Jamaica (JAM) Drivig licence, ID,
+  - Saint Lucia (LCA) ID,
+  - Mongolia (MNG) Driving licence,
+  - New Zealand (NZL) ID,
+  - Pakistan (PAK) Driving licence, ID,
+  - Trinidad and Tobago (TTO) Driving licence, ID,
+  - Saint Vincent and the Grenadines (VCT) Driving licence, ID
+* Initial support for flat template-free bank card number scanning;
+* Other minor fixes and improvements.
+
+Smart IDReader 3.1.0
+
+* Improved document detection subsystem;
+* Reduced RAM consumption during document detection;
+* Improved barcodes detection;
+* Improved bank card fields recognition accuracy;
+* New document types added:
+  - Argentina vehicle registration certificate,
+  - Belarusian internal passport page (2nd type),
+  - Fiji driving licencse and tax identification number,
+  - Italian health insurance,
+  - Vietnamese ID
+* MRZ now returns personal photo as an image field;
+* Other minor fixes and improvements.
+
+Smart IDReader 3.0.0
+
+* New field naming convention implemented (for all VIZ and MRZ Passports);
+* Added document content validation and fields cross-checking, via ForensicFields section of the RecognitionResult;
+* New text line recognition subsystem, new generation of OCR algorithms, significant improvement of text line accuracy and speed;
+* Improvement of CJK fields recognition accuracy;
+* Improved field finding subsystem;
+* New and improved algorithms for MRZ detection in mobile use-case;
+* Significant improvement of document location and typization algorithms, improved accuracy and speed, improved rejection mechanics;
+* Improved recognition accuracy and speed of bank card fields;
+* Improved barcodes capture (AZTEC and QR symbologies);
+* Added more than 130 new document types, including 
+  - Brazil Residence permit, 
+  - Croatia Residence permit and Visa, 
+  - Cyprus Driving license, 
+  - French Visa, 
+  - Greek ID, Residence permit and Visa, 
+  - Honduras Driving license, 
+  - Hungarian Residence permit and Visa, 
+  - Indian PAN card, 
+  - Island Driving License and Residence permit, 
+  - Kenian ID, 
+  - Kuwait Driving License, ID and Passport, 
+  - Luxembourg Driving license, ID, Residence permit and Visa, 
+  - Macedonian Driving License, 
+  - Malta ID, Residence permit and Visa, 
+  - Mexican Driving licenses, Passport and Visa, 
+  - Montenegro Driving license and Visa, 
+  - Oman Driving license and ID, 
+  - Polish Residence permit and Visa, 
+  - Romanian Residence permit and visa, 
+  - San Marino ID and Passport, 
+  - Spanish Residence permit and Visa, 
+  - The Netherlands ID, Residence permit and Visa, 
+  - Turkish Residence permit, 
+  - UAE Driving license and Work permit, 
+  - UK Visa, 
+  - Uruguay Driving license and ID, 
+  and other types.
+* 64-bit libraries linked by default in Android samples, x86_64 Android build added;
+* Fixed HandleRef issue in C# interface wrappers;
+* MSVS 2017 build is now default for Windows SDKs;
+* Other minor fixes and improvements.
+
+Smart IDReader 2.3.1
+
+* Improved document recognition for the following document types:
+  - Chinese passports (chn.passport.*)
+  - Czech Driving licences and Vehicle certificate (cze.vrc.*, cze.drvlic.*)
+  - Japanese driving licence and ID card (jpn.drvlic.*, jpn.id.*)
+  - Kazakhstan ID card (kaz.id.*)
+  - Russian driving licence (rus.drvlic.*)
+  - Saudi Arabian ID and Driving licence (sau.id.*, sau.drvlic.*)
+  - Slovakian Driving licence and Vehicle certificate (svk.drvlic.*, svk.vrc.*)
+  - USA driving licence (usa.drvlic.*)
+* Added new document types support:
+  - Danish residence permit and visa (dnk.rp.*, dnk.visa.*)
+  - Ecuador passport (ecu.passport.*)
+  - Haiti passport (hti.passport.*)
+  - Iraq passport (irq.passport.*)
+  - Laos passport (lao.passport.*)
+  - Malta driving licence (mlt.drvlic.*)
+  - Monaco passport, ID and residence permit (mco.passport.*, mco.id.*, mco.rp.*)
+  - Saudi Arabian residence permit and vehicle certificate (sau.rp.*, sau.vrc.*)
+  - Taiwan ID (twn.id.*)
+* Improved detection of AZTEC codes;
+* Other minor fixes and improvements
+
+Smart IDReader 2.3.0
+
+* Added support for Chinese, Japanese and Korean language support;
+* Added EU ID Card recognition mode with auto document type selection;
+* Improved AZTEC and QR codes scanning;
+* Improved document recognition for the following document types:
+  - Austrian residence permit (aut.rp.*)
+  - Bank cards (card.*)
+  - Chinese passport (chn.passport.*)
+  - Czech driving licence (cze.drvlic.*)
+  - Czech ID cards (cze.id.*)
+  - Danish driving licence (dnk.drvlic.*)
+  - Estonian ID cards (est.id.*)
+  - Finnish driving licence (fin.drvlic.*)
+  - French ID cards (fra.id.*)
+  - French passports (fra.passport.*)
+  - German driving licence (deu.drvlic.*)
+  - German passports (deu.passport.*)
+  - Greek driving licence (grc.drvlic.*)
+  - Ireland passports (irl.passport.*)
+  - Israel driving licence (isr.drvlic.*)
+  - Israel ID cards (isr.id.*)
+  - Kazakhstan ID cards (kaz.id.*)
+  - Netherlands passport (nld.passport.*)
+  - Polish driving licence (pol.drvlic.*)
+  - Russian national passport (rus.passport.national)
+  - Singapour ID card (sgp.id.*)
+  - Singapour Work permit (sgp.work.*)
+  - Slovakia ID card (svk.id.*)
+  - Swedish ID card (swe.id.*)
+  - Swiss ID cards (che.id.*)
+  - Swiss residence permit (che.rp.*)
+  - Taiwan passport (twn.passport.*)
+  - UK residence permit (gbr.rp.*)
+  - Ukrainian driving licence (ukr.drvlic.*)
+* Significant improvement of the U.S. driving licence recognition (usa.drvlic.*);
+* Added new document types support:
+  - Bolivian ID cards (bol.id.*)
+  - Cabo Verde passport (cpv.passport.*)
+  - Congo (Democratic Republic of the) passport (cod.passport.*)
+  - Congo passport (cog.passport.*)
+  - Costa Rica passport (cri.passport.*)
+  - Estonian visa (est.visa.*)
+  - Finnish residence permit (fin.rp.*)
+  - Finnish visa (fin.visa.*)
+  - German visa (deu.visa.*)
+  - Guatemala passport (gtm.passport.*)
+  - Guyana passport (guy.passport.*)
+  - Ireland driving licence (irl.drvlic.*)
+  - Italian residence permit (ita.rp.*)
+  - Italian visa (ita.visa.*)
+  - Japanese ID card (My Number card, jpn.id.*)
+  - Japanese residence permit (jpn.rp.*)
+  - Korean driving licence (kor.drvlic.*)
+  - Korean ID card (kor.id.*)
+  - Latvian residence permit (lva.rp.*)
+  - Lithuania residence permit (ltu.rp.*)
+  - Lithuania visa (ltu.visa.*)
+  - Netherlands driving licence (nld.drvlic.*)
+  - Netherlands ID card (nld.id.*)
+  - Norwegian residence permit (nor.rp.*)
+  - Norwegian visa (nor.visa.*)
+  - Portuguese residence permit (prt.rp.*)
+  - Portuguese visa (prt.visa.*)
+  - Saint Vincent and the Grenadines passport (vct.passport.*)
+  - Saudi Arabia driving licence (sau.drvlic.*)
+  - Saudi Arabia ID card (sau.id.*)
+  - Singapour driving licence (sgp.drvlic.*)
+  - Vatican passport (vat.passport.*)
+  - Venezuela ID cards (ven.id.*)
+* Other minor fixes and improvements.
+
+Smart IDReader 2.2.2
+
+* Improved recognition of Australian documents, added more driving licence templates;
+* Improved recognition of French ID documents;
+* Added EU Driving License recognition mode with auto document type selection;
+* Other minor fixes and improvements.
+
+Smart IDReader 2.2.1
+
+* Improved barcode detection algorithms for videostream usecase;
+* Improved bank cards layout parsing for some embossed templates, improved character OCR for bank cards;
+* Improved recognition accuracy and fixed bugs for multiple document types, including:
+  - Austrian driving license,
+  - Bulgarian passport,
+  - Belarusian passport and driving license,
+  - Canadian driving license,
+  - German ID,
+  - French driving license,
+  - UK driving license,
+  - Italian passport,
+  - Kazakhstan ID,
+  - Norway passport,
+  - Russian driving license, travel passports, national passport,
+  - US driving licenses
+* Other minor fixes and improvements
+
+
+Smart IDReader 2.2.0
+
+* Added support for Albanian residence permit (alb.rp.*)
+* Added support for Andorra Driving license (and.drvlic.*)
+* Added support for Andorra residence permit (and.rp.*)
+* Added support for Australian ID cards (aus.id.*)
+* Added support for Australian Driving license (aus.drvlic.*)
+* Added support for Austrian visa (aut.visa.*)
+* Added support for Austrian vehicle registraction (aut.vrc.*)
+* Added support for Belgian residence permit (bel.rp.*)
+* Added support for Belgian visa (bel.visa.*)
+* Added support for Bulgarian residence permit (bgr.rp.*)
+* Added support for Bulgarian visa (bgr.visa.*)
+* Added support for Bosnia and Herzegovina ID card (bih.id.*)
+* Added support for Bosnia and Herzegovina Driving licence (bih.drvlic.*)
+* Added support for Canadian Driving licences (can.drvlic.*)
+* Added support for Canadian ID cards (can.id.*)
+* Added support for Swiss residence permit (che.rp.*)
+* Added support for Swiss visa (che.visa.*)
+* Added support for French residence permit (fra.rp.*)
+* Added stamps recognition functionality in the recognition engine, added support for Russian internal passport registration stamps;
+* Improved AZTEC detection and scanning in barcode recognition mode;
+* New bank cards recognition workflow is released;
+* Other fixes and improvements
+
+Smart IDReader 2.1.2
+
+* Added support for Czech Residence Permit (cze.rp.*)
+* Added support for Czech Visa (cze.visa.*)
+* Added support for Czech Vehicle Registration Certificate (cze.vrc.*)
+* Added support for Slovakian Vehicle Registration Certificate (svk.vrc.*)
+* Improved page segmentation, document location and text field OCR subsystems for several document types
+* Other fixes and improvements
+
+Smart IDReader 2.1.1
+
+* New document types added:
+  Armenia - Visa (arm.visa.*)
+  Belarus - ID Card (blr.id.*)
+  Belarus - Visa (blr.visa.*)
+  Kazakhstan - Visa (kaz.visa.*)
+  Kyrgyzstan - Vehicle Registration Certificate (kgz.vrc.*)
+  Russian Federation - Temporary ID (rus.2p.*)
+  Russian Federation - Lawyer ID (rus.id.lawyer.*)
+  Russian Federation - Prosecutor ID (rus.id.prosecutor.*)
+  Russian Federation - Medical Insurance (new types: rus.oms.type3, rus.oms.type4)
+  Sweden - ID Card (swe.id.*)
+  Sweden - Passport (new type swe.passport.type2)
+  Sweden - Residence Permit (swe.rp.*)
+  Sweden - Visa (swe.visa.*)
+  Tajikistan - Driving License (tjk.drvlic.*)
+  Tajikistan - ID Card (tjk.id.*)
+  Turkmenistan - Driving License (tkm.drvlic.*)
+  Turkmenistan - Passport (tkm.passport.*)
+  Turkmenistan - Visa (tkm.visa.*)
+  Ukraine - Visa (ukr.visa.*)
+  Uzbekistan - Visa (uzb.visa.*)
+  Uzbekistan - Vehicle Registration Certificate (uzb.vrc.*)
+* Added ProcessImageDataBase64 methods to RecognitionSession to allow 
+  processing in-memory images encoded in Base64 format.
+* Minor fixes and improvements
+
+Smart IDReader 2.1.0
+
+* Added support for 206 new types of passports
+* Added support for 63 new types of USA driving licences (usa.drvlic.*)
+* Other new document types added:
+  Armenia - driving licence (arm.drvlic.*)
+  Azerbaijan - driving licence (aze.drvlic.*)
+  Azerbaijan - ID (aze.id.*)
+  Brazil - ID (new type bra.id.type2)
+  Bulgaria - ID (new type bgr.id.type3)
+  Estonia - driving licence (est.drvlic.*)
+  Estonia - ID (new type est.id.type2)
+  Finland - driving licence (new type fin.drvlic.type2)
+  Georgia - vehicle registration certificate (geo.vrc.*)
+  Georgia - driving licence (geo.drvlic.*)
+  Honduras - ID (hnd.id.*)
+  Indonesia - driving licence (idn.drvlic.*)
+  Indonesia - ID (idn.id.*)
+  Latvia - driving licence (lva.drvlic.*)
+  Liechtenstein - driving licence (lie.drvlic.*)
+  Liechtenstein - ID (lie.id.*)
+  Lithuania - driving licence (ltu.drvlic.*)
+  Lithuania - ID (new type ltu.id.type2)
+  Norway - driving licence (new type nor.drvlic.type2)
+  Papua New Guinea - driving licence (png.drvlic.*)
+  Papua New Guinea - ID (png.id.*)
+  Paraguay - driving licence (pry.drvlic.*)
+  Paraguay - ID (pry.id.*)
+  Philippines - driving licence (phl.drvlic.*)
+  Russian Federation - military ID (new type rus.id.military.type5)
+  Russian Federation - residence permit (new type rus.residence.type2)
+  Slovakia - driving licence (svk.drvlic.*)
+  Slovakia - ID (new type svk.id.type2)
+  Slovakia - residence permit (svk.rp.*)
+  Slovakia - visa (svk.visa.*)
+  Slovenia - driving licence (svn.drvlic.*)
+  Slovenia - ID (svn.id.*)
+  Slovenia - residence permit (svn.rp.*)
+  Slovenia - visa (svn.visa.*)
+  Thailand - driving licence (tha.drvlic.*)
+  Thailand - ID (tha.id.*)
+  United Kingdom - residence permit (gbr.rp.*)
+* Reduced disk memory footprint for static and dynamic libraries
+* Minor fixes and improvements
+
+Smart IDReader 2.0.2
+
+* AnyPassport mode added which automatically detects the type of any supported international passport;
+* New document types added:
+  Albanian driving licence (alb.drvlic.*),
+  Albanian ID (alb.id.*),
+  Albanian passport (alb.passport.*),
+  Algerian passport (dza.passport.*),
+  Brazil passport (bra.passport.*),
+  Croatian driving licence (hrv.drvlic.*),
+  Croatian passport (hrv.passport.*),
+  Czech Republic passport (cze.passport.*),
+  Hungarian passport (hun.passport.*),
+  Interpol ID card (xpo.id.*),
+  Moldova passport (mda.passport.*),
+  Romanian driving licence (rou.drvlic.*),
+  Uruguay passport (ury.passport.*),
+  US driving licence - Arkansas (usa.drvlic.ar.*),
+  US driving licence - Colorado (usa.drvlic.co.*),
+  US driving licence - Connecticut (usa.drvlic.ct.*),
+  US driving licence - Indiana (usa.drvlic.in.*),
+  US driving licence - Iowa (usa.drvlic.ia.*),
+  US driving licence - Louisiana (usa.drvlic.la.*),
+  US driving licence - Maryland (usa.drvlic.md.*),
+  US driving licence - Minnesota (usa.drvlic.mn.*),
+  US driving licence - Nevada (usa.drvlic.nv.*),
+  US driving licence - Oklahoma (usa.drvlic.ok.*),
+  US driving licence - Utah (usa.drvlic.ut.*),
+  US driving licence - Washington (usa.drvlic.wa.*)
+* Minor fixes and improvements.
+
+Smart IDReader 2.0.1
+
+* Added Hebrew recognition support;
+* Added Vietnamese language recognition support;
+* Improved recognition for several document types;
+* Added interface for acquiring raw fields quadrangles in document template coordinates;
+* Added image sub-region masking (pixelizing) functionality;
+* New document types added:
+  Egypt ID (egy.id.*),
+  Greek passport (grc.passport.*),
+  Israeli ID (isr.id.*),
+  Kyrgyz driving licence (kgz.drvlic.*),
+  Kyrgyz ID (new type kgz.id.type2),
+  Polish driving licence (pol.drvlic.*),
+  Polish ID (new type pol.id.type3),
+  Polish passport (pol.passport.*),
+  US driving licence - Georgia (usa.drvlic.ga.*),
+  US driving licence - Illinois (usa.drvlic.il.*),
+  US driving licence - Missouri (usa.drvlic.mo.*),
+  US driving licence - New Jersey (usa.drvlic.nj.*),
+  US driving licence - Ohio (usa.drvlic.oh.*),
+  US driving licence - Pennsylvania (usa.drvlic.pa.*),
+  US driving licence - Tennessee (usa.drvlic.tn.*),
+  Uzbekistan passport (new type uzb.passport.type2);
+* Minor fixes and improvements.
+
+Smart IDReader 2.0.0
+
+* Complete overhaul of the core recognition technology;
+* New algorithms for document typization and location, text segmentation and recognition;
+* New configuration system designed for optimization of storage size, used RAM and configuration speed;
+* Improved recognition result interface now allows to implement custom field attributes, validity checks, etc.;
+* MRZ recognition accuracy improvement;
+* MRZ fields control digits check results are now explicit in field attributes;
+* MRZ server version now features quick detection algorithm under any rotation angle anywhere on an input image;
+* Russian National Passport handwritten fields detection (results returned in field attributes);
+* Russian National Passport handwritten digital fields recognition implemented;
+* Russian National Passport now features location mode with projective restoration;
+* New fields added for multiple supported document types, improved recognition accuracy;
+* Integrated basic barcodes recognition functionality;
+* New arbitrary document crop (projective restoration) functionality;
+* New document types added: 
+  Austrian asylum residence permit (aut.asylum.rp.*), 
+  Austrian residence permit (aut.rp.*),
+  Bulgarian driving licence (bgr.drvlic.*),
+  Belarussian driving licence - new type (blr.drvlic.type2),
+  Belarussian vehicle registration certificate (blr.vrc.type1),
+  Brazil driving licence (bra.drvlic.*),
+  Brazil ID (bra.id.*),
+  Brazil residence licence (bra.re_licence.*),
+  Canadian driving licence - British Columbia (can.drvlic.bc.*),
+  Canadian driving licence - Ontario (can.drvlic.on.*),
+  Cyprus ID (cyp.id.*),
+  German driving licence - new type (deu.drvlic.type2),
+  German residence permit (deu.rp.*),
+  UK driving licence - new types,
+  UK residence permit (gbr.rp.*),
+  Italian ID (ita.id.*),
+  Kazakhstan driving licence (kaz.drvlic.*),
+  Kazakhstan vehicle registration certificate (kaz.vrc.*),
+  Mexican electoral id (mex.id.*),
+  Russian death certificate (rus.death_certificate.*),
+  Russian divorce certificate (rus.divorce_certificate.*),
+  Russian military ID (rus.id.military.*),
+  Russian police ID (rus.id.police.*),
+  Russian soldier ID (rus.id.soldier.*),
+  Russian INN for citizens (rus.inn.citizen.*),
+  Russian INN for companies (rus.inn.entity.*),
+  Russian marriage certificate (rus.marriage_certificate.*),
+  Russian migration card (rus.migration_card.*),
+  Russian compulsory health insurance policy (rus.oms.*)
+  Russian international passport - non-biometric (rus.passport.international),
+  Russian vehicle passport (rus.pts.*),
+  Russian residence permit (rus.residence.*),
+  Russian work permit (rus.work_permit.*),
+  Spanish passport (esp.passport.*)
+  Ukrainian driving licence (ukr.drvlic.*),
+  Ukrainian ID (ukr.id.*),
+  Ukrainian passport (ukr.passport.*),
+  Ukrainian vehicle registration certificate (ukr.vrc.*),
+  US driving licence - California - new type (usa.drvlic.ca.type2 and type3),
+  US driving licence - Florida - new type (usa.drvlic.fl.type2),
+  US driving licence - Kansas (usa.drvlic.ks.*),
+  US driving licence - New York (usa.drvlic.ny.*),
+  US driving licence - Texas - new type (usa.drvlic.tx.type2),
+  US IRS W-7 form (usa.irs.w7)
+* New interface wrappers (PHP, Python)
+
+
+Smart IDReader 1.18.0
+
+* Added support for French ID card (fra.id.*)
+* Added support for French Driving license (fra.drvlic.*)
+* Added support for French passport (fra.passport.*)
+* Added support for Swedish passport (swe.passport.*)
+* Added support for Armenian passport (arm.passport.*)
+* Added support for Kazakhstan passport (kaz.passport.*)
+* Added support for Kyrgyzstan passport (kgz.passport.*)
+* Added support for Moldavian Driving license (mda.drvlic.*)
+* Added support for Macedonian ID card (mkd.id.*)
+* Added support for Slovak ID card (svk.id.*)
+* Added support for back sides of Spanish ID (esp.id.*)
+* Added EUE as permitted issues for MRZ documents
+* Fixed recognition of 31st page of Belarussian passport
+* Minor fixes and improvements
+
+Smart IDReader 1.17.0
+
+* Added support for Arizona Medical Marijuana Program ID (usa.ammpid.*)
+* Added support for Armenian ID card (arm.id.*)
+* Added support for Belgium Driving licence (bel.drvlic.*)
+* Added support for Hungarian ID card (hun.id.*)
+* Added support for Hungarian Driving licence (hun.drvlic.*)
+* Added support for Nigerian ID card (nga.id.*)
+* Added support for Norwegian ID card (nor.id.*)
+* Added support for Norwegian Driving licence (nor.drvlic.*)
+* Added support for Polish Driving licence (pol.drvlic.*)
+* Added support for Spanish Driving licence (esp.drvlic.*)
+* Added support for Uzbek passport (uzb.passport.*)
+* Added support for address field in Romanian ID card (rou.id.*)
+* Fixed recognition in Spanish residence permit (esp.residence.*)
+* Fixed geometry visualization in Android sample app
+* Minor fixes and improvements
+
+Smart IDReader 1.16.0
+
+* Added support for Croatian ID (hrv.id.*)
+* Added support for South African ID (zaf.id.*)
+* Added support for South African Crew Member Certificate (zaf.pilotlic.*)
+* Added support for Serbian ID (srb.id.*)
+* Added support for Serbian Driving licence (srb.drvlic.*)
+* Added support for Tajikistani passport (tjk.passport.*)
+* Added support for Chilean ID card (chl.id.*)
+* Added support for Finland ID card (fin.id.*)
+* Minor fixes and improvements
+
+Smart IDReader 1.15.0
+
+* Added support for New Zealand Driving license (nzl.drvlic.*)
+* Added support for Azerbaijan Vehicle registration document (aze.vrd.*)
+* Enhanced C wrapper for smartIdEngine interface
+* Minor fixes and improvements
+
+Smart IDReader 1.14.1
+
+* Improved quality of photo/page3 image returned for Russian national passport (rus.passport.national)
+* Minor fixes and improvements
+
+Smart IDReader 1.14.0
+
+* Added support for USA Green Card (usa.residence.*)
+* Added support for USA Passport Card (usa.passport_card.*)
+* Added support for USA Visa (usa.visa.*)
+* Added support for USA Border Crossing Card (usa.border_crossing.*)
+* Added support for Lithuanian ID (ltu.id.*)
+* Added support for Greek Driving Licence (grc.drvlic.*)
+* Added support for Hong Kong ID (hkg.id.*)
+* Added support for new Singapore ID (sgp.id.*)
+* Added support for address field of German ID (deu.id.type1)
+* Added support for back side of Russian Driving Licence (rus.drvlic.type1)
+* Added OCR neural networks for Greek and Lithuanian languages
+* Minor fixes and improvements
+
+Smart IDReader 1.13.0
+
+* Added support for Indian Aadhaar card (ind.aadhaar.*)
+* Added support for El Salvador ID card (slv.id.*)
+* Added support for El Salvador vehicle certificate (slv.vrd.*)
+* Added support for Georgian ID card (geo.id.*)
+* Added support for Georgian passport (geo.passport.*)
+* Added support for Belarussian internal passport (page 31, blr.passport.internal)
+* Added support for Russian birth certificate (rus.birth_certificate.*)
+* Added new fields in rus.snils.*, bgr.id.*
+* Added OCR neural networks for Estonian and Kyrgyz languages
+* Improved document localization and typization algorithms
+* New sample application in Android SDK
+* Minor fixes and improvements
+
+Smart IDReader 1.12.0
+
+* Added support for Kuwait ID (kwt.id.*)
+* Added support for Bahrain ID (bhr.id.*)
+* Added support for Portuguese ID (prt.id.*)
+* Added support for Portuguese Driving Licence (prt.drvlic.*)
+* Added support for Turkish ID (tur.id.*)
+* Added support for Turkish Driving Licence (tur.drvlic.*)
+* Added support for Florida Driving Licence (usa.drvlic.fl.*)
+* Added support for Alabama Driving Licence (usa.drvlic.al.*)
+* Added support for Michigan Driving Licence (usa.drvlic.mi.*)
+* Added support for Washington DC Driving Licence (usa.drvlic.dc.*)
+* Added support for newer German Passport (deu.passport.type2)
+* Added support for address recognition of Bulgarian ID
+* Minor fixes and improvements
+
+Smart IDReader 1.11.0
+
+* Added support for Texas Driving Licence (usa.drvlic.tx.*)
+* Added support for Massachusetts Driving Licence (usa.drvlic.ma.*)
+* Added support for Arizona Driving Licence (usa.drvlic.az.*)
+* Added support for New Mexico Driving Licence (usa.drvlic.nm.*)
+* Added support for Polish ID (pol.id.*)
+* Added support for Swiss Driving Licence (che.drvlic.*)
+* Fixed problem with C# sample application
+* Minor fixes and improvements
+
+Smart IDReader 1.10.0
+
+* Added support for old type of Bulgarian ID (bgr.id.type2)
+* Added support for Spanish Residence permit (esp.residence.*)
+* Added support for Romanian ID card (rou.id.*)
+* Added support for Singapore ID card (sgp.id.*)
+* Added support for Singapore Work Permit (sgp.work.*)
+* Improvements in document search subsystem and to fields recognition
+* Added support for local UTF-8 characters in Romanian, Spanish and German ID cards
+* Minor fixes and improvements
+* Smart 3D OCR MRZ: added support for Bulgarian Vehicle Registration Document (mrz.bgr.vrd)
+
+Smart IDReader 1.9.1
+
+* Minor fixes and improvements of recognition for some documents
+* Smart CardReader: modified result acceptance strategy for
+
+Smart IDReader 1.9.0
+
+* Added support for Kyrgyzstani ID (kgz.id.*)
+* Added support for Czech ID (cze.id.*)
+* Added support for Czech Driving Licence (cze.drvlic.*)
+* Added support for Estonian ID (est.id.*)
+* Added support for Belgian ID (bel.id.*)
+* Added support for Italian passport (ita.passport.*)
+* Added support for Italian Driving Licence (ita.drvlic.*)
+* Added support for California Driving licence (usa.drvlic.ca.*)
+* Added functionality for disabling redundant fields recognition for provided document type
+* Added functionality for retrieving list of recognizable fields for provided document type
+* Minor fixes and improvements
+
+Smart IDReader 1.8.0
+
+* Added support for Bulgarian ID (bgr.id.*)
+* Added support for Latvian ID (lva.id.*)
+* Added support for Finland Driving licence (fin.drvlic.*)
+* Added support for Israeli Driving licence (isr.drvlic.*)
+* Added support for Swedish Driving licence (swe.drvlic.*)
+* Minor fixes and improvements
+
+Smart IDReader 1.7.0
+
+* Added support for Belarusian Driving licence (blr.drvlic.type1)
+* Added support for Russian visa (rus.visa.type1)
+* Added support for newer Kazakhstan ID document (kaz.id.type3)
+* Recognition results now available before postprocessing stage (only for
+  Smart PassportReader module)
+* Improved quality of document template location and identification subsystem
+* Other minor fixes and improvements
+
+Smart IDReader 1.6.0
+
+* Added support for Belarusian Passport (blr.passport.*)
+* Overall improvement of stability and speed of document template location and identification subsystem.
+* Fields recognition precision improvements for several document types.
+* Smart 3D OCR MRZ module: added support for Swiss Driving Licence (mrz.chedl)
+* Smart CardReader module: recognition of 90-degrees rotated cards recognition, new confidence estimation subsystem, improved recognition precision.
+* Fixed confidence estimation problems for Russian STS fields
+* Fixed recognition of Austrian ID and drvlic precision loss which happened in 1.5.0
+* Other minor fixes and improvements
+
+Smart IDReader 1.5.1
+
+* Smart CardReader module: updated and improved neural networks for separate characters recognition
+* Smart 3D OCR MRZ module: improved algorithm for TD-1 (3-lined MRZ) detection in Anywhere mode
+* Minor fixes and improvements
+
+Smart IDReader 1.5.0
+
+* Added support for newer UK Driving licence (gbr.drvlic.type2, 'common' renamed to 'type1')
+* Added support for Austrian passport (aut.passport.*)
+* Added support for Japanese passport (jpn.passport.*)
+* Added support for Indian passport (ind.passport.*)
+* Added support for Syrian passport (syr.passport.*)
+* Fixed field images extraction for Russian national passport
+* Fixed matching result for MRZ server mode
+
+Smart IDReader 1.4.0
+
+* Added support for UK Passport (gbr.passport.*)
+* Added support for German passport (deu.passport.*)
+* Added support for Spanish ID (esp.id.*)
+* Added support for MyKad - Malaysian ID (mys.id.*)
+* Added support for Japanese Driving licence (jpn.drvlic.*) and Health Insurance card (jpn.insurance.*)
+* New personal photo detector implemented
+* Fixed field quadrangles (SegmentationResult) callbacks for fields with terminal state.
+
+Smart IDReader 1.3.1
+
+* Fixed problems with string fields confidence estimation on Russian Driving licence
+* Improved recognition quality on date fields of Russian Driving Licence
+
+Smart IDReader 1.3.0
+
+* Added support for USA passport (usa.passport.*)
+* Added support for Philippine passport (phl.passport.*)
+* Added support for German ID and Driving licence (deu.id.*, deu.drvlic.*)
+* Added support for Austrian ID and Driving licence (aut.id.*, aut.drvlic.*)
+* Recognition engine speed-up
+
+Smart IDReader 1.2.0
+
+* Added support for Kazakhstan ID cards (2 types: kaz.id.old and kaz.id.new)
+* Added support for Chinese passport (chn.passport.new and chn.passport.old)
+* Added support for UK Driving licence (gbr.drvlic.common, gbr.drvlic.provisional)
+* Smart CardReader: improved recognition precision for all fields, added support for more expiry date format patterns
+
+Smart IDReader 1.1.0
+
+* Added SegmentationResult::GetZoneFieldName to obtain field name for given zone name
+* Added support for Russian biometric passport (rus.passport.biometric)
+* Fixed possible crashes using internal smartid engine and internal cardreader engine
+
+Smart IDReader 1.0.4
+
+* Added documents reference file (DOCUMENTS_REFERENCE.html) with all supported document types and their respective fields
+* Better template matching and fields recognition for SNILS, Russian Driver's licence
+* Fixed field names for rus.drvlic.type1: 'name_rus' and 'patronymic_rus' are now separate fields, old value of 'name_rus' as appears on the document is now stored in 'name_and_patronymic_rus'
+* Fixed problems with lazy_config
+* Smart CardReader module: fixed memory leaks, fixed confidence values for card fields and characters, added support for 'MIR' cards
+* Significantly decreased dictionary sizes for Russian Driver's licence and SNILS
+* Fixed problem with 'authority' field's confidence for Russian National Passport
+* Fixed template images returning for rus.passport.national
+* Template images for rus.passport.national are returned in RGB even if input image was BGRA
+
+Smart IDReader 1.0.3
+
+* Removed libpng, libtiff and libjpeg from iOS builds to avoid version conflicts
+
+Smart IDReader 1.0.2
+
+* Fixed linkage problems with internal 'deshearer' library on some platforms
+* Better postprocessing and template finding for several Smart IDReader documents
+
+Smart IDReader 1.0.1
+
+* Added 'serverModeEnabled' option for MRZ documents
+
+Smart IDReader 1.0.0
+Differences from Betas (Beta 0.8.4 -> 1.0.0)
+
+* Fixed numerous bugs
+* New Session interface (removed 'SessionType' entity, the control is performed with the set of documents to be recognized)
+* Thread-safe se::smartid::RecognitionEngine and se::smartid::RecognitionSession
+* Better recognition of SNILS, STS, Russian Driver's licence
+* Better MRZ finding ('Anywhere' mode) for MRZ documents
+* Added 'server mode' for MRZ engine
+* Field geometry results ('Segmentation Result') returning from Card Reader engine, from Russian Passport Engine and from Smart ID Engine
+* Field images and full template images retrieval
+* Field confidences retrieval
+* 'Stoppers' implemented: a field is not going to be recognized in videostream after it has been declared 'terminal'
+* Removed optional document quadrangle fields in se::smartid::RecognitionSession::Process* functions
