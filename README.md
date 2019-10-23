@@ -1,14 +1,14 @@
 # SmartIDReader-Server-SDK - Demo version
 
-This is a DEMO version of Smart IDReader Server SDK by Smart Engines which demonstrates the usage of Smart IDReader library/SDK in ypur Python or PHP projects without actually providing any recognition functionality. Instead, it outputs fake results for document search, field segmentation and recognition.
+This is a DEMO version of Smart IDReader Server SDK by [Smart Engines](https://smartengines.com) which demonstrates the usage of Smart IDReader library/SDK in ypur Python or PHP projects without actually providing any recognition functionality. Instead, it outputs fake results for document search, field segmentation and recognition.
 
 If you'd like to obtain a trial or full version of Smart IDReader please contact us via:
 
 support@smartengines.com
 
-http://smartengines.com/contacts
+https://smartengines.com/contacts
 
-http://smartengines.ru/contacts
+https://smartengines.ru/contacts
 
 Test and trial/full versions are only different in static library + configuration files so you wouldn't have to rewrite any code after you're finished integrating Smart IDReader SDK into your application.
 
