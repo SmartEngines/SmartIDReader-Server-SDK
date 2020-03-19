@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2012-2017, Smart Engines Ltd
+ * Copyright (c) 2012-2020, Smart Engines Ltd
  * All rights reserved.
  */
 
@@ -272,7 +272,7 @@ public:
    *         if failed to decode utf8-string 'value'
    */
   ImageField(const std::string& name, const Image& value, bool is_accepted,
-             double confidence) throw(std::exception);
+             double confidence, const std::map<std::string, std::string>& attributes = {}) throw(std::exception);
 
   /// Default dtor
   ~ImageField();
@@ -286,12 +286,36 @@ public:
   /// The system's confidence level in field result (in range [0..1])
   double GetConfidence() const;
 
+  /// Returns a vector of attribute names
+  std::vector<std::string> GetAttributeNames() const;
+
+  /// Getter for attributes map
+  const std::map<std::string, std::string> &GetAttributes() const;
+
+  /**
+   * @brief Check if attribute with given name is present
+   * @param attribute_name attribute name to check presence of
+   * @return true if attribute with given name is present
+   */
+  bool HasAttribute(const std::string &attribute_name) const;
+
+  /**
+   * @brief Get attribute value by its name
+   * @param attribute_name key attribute name
+   * @return attribute value by its name
+   */
+  const std::string &GetAttribute(const std::string &attribute_name) const
+    throw(std::exception);
+
 private:
   std::string name_; ///< Image field name
   Image value_;      ///< Image field value (internal image storage)
 
   bool is_accepted_;  ///< Specifies whether the system is confident in result
   double confidence_; ///< Specifies the system's confidence level in result
+
+  std::map<std::string, std::string> attributes_; ///< Field attributes
+
 };
 
 /**
@@ -379,7 +403,7 @@ public:
   const std::string& GetName() const;
   /// Getter for string field value (string representation)
   const std::string& GetValue() const;
-  /// Whether the system is confidence in field recognition result
+  /// Whether the system is confident in field recognition result
   bool IsAccepted() const;
   /// The system's confidence level in field recognition result (in range
   /// [0..1])

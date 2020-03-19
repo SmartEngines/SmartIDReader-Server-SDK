@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2012-2017, Smart Engines Ltd
+Copyright (c) 2012-2020, Smart Engines Ltd
 All rights reserved.
 */
 
@@ -12,8 +12,8 @@ All rights reserved.
 #define SMARTID_ENGINE_SMARTID_COMMON_H_INCLUDED_
 
 #if defined _MSC_VER
-#pragma warning(push)  
-#pragma warning(disable : 4290)  
+#pragma warning(push)
+#pragma warning(disable : 4290)
 #endif
 
 #if defined _WIN32 && SMARTID_ENGINE_EXPORTS
@@ -224,6 +224,7 @@ public:
   /// Image dtor
   ~Image();
 
+#ifndef STRICT_DATA_CONTAINMENT
   /**
    * @brief Saves an image to file
    * @param image_filename - path to an image. Supported formats: png, jpg, tif,
@@ -232,6 +233,7 @@ public:
    * @throw std::runtime_error if image saving failed
    */
   void Save(const std::string& image_filename) const throw(std::exception);
+#endif // #ifndef STRICT_DATA_CONTAINMENT
 
   /**
    * @brief Returns required buffer size for copying image data, O(1)
@@ -322,6 +324,18 @@ public:
   int GetChannels() const;
 
   /**
+   * @brief Getter for image data
+   * @return Pointer to image data
+   */
+  void* GetData() const;
+
+  /**
+   * @brief Getter for internal image pointer
+   * @return Pointer to internal image
+   */
+  void* GetPtr() const;
+
+  /**
    * @brief Returns whether this instance owns (and will release) image data
    * @return memown variable value
    */
@@ -379,12 +393,13 @@ public:
   void FlipHorizontal() throw(std::exception);
 
 public:
-  char* data;   ///< Pointer to the first pixel of the first row
-  int width;    ///< Width of the image in pixels
-  int height;   ///< Height of the image in pixels
-  int stride;   ///< Difference in bytes between addresses of adjacent rows
-  int channels; ///< Number of image channels
-  bool memown;  ///< Whether the image owns the memory itself
+  void* internal_image;
+//  char* data;   ///< Pointer to the first pixel of the first row
+//  int width;    ///< Width of the image in pixels
+//  int height;   ///< Height of the image in pixels
+//  int stride;   ///< Difference in bytes between addresses of adjacent rows
+//  int channels; ///< Number of image channels
+//  bool memown;  ///< Whether the image owns the memory itself
 };
 
 /**
@@ -401,7 +416,7 @@ enum SMARTID_DLL_EXPORT ImageOrientation {
 } } // namespace se::smartid
 
 #if defined _MSC_VER
-#pragma warning(pop)  
+#pragma warning(pop)
 #endif
 
 #endif // SMARTID_ENGINE_SMARTID_COMMON_H_INCLUDED

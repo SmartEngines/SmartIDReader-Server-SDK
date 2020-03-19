@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2012-2017, Smart Engines Ltd
+ * Copyright (c) 2012-2020, Smart Engines Ltd
  * All rights reserved.
 */
 
